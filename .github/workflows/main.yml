@@ -34,3 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+     
+     # Simulate an error
+     - name: Simulate an error
+        run: echo "About to fail" ; exit 1
+
+      - name: Another greeting
+        run: echo "Hello, world! HAAAAAAAAII"
