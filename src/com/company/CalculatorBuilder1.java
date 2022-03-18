@@ -9,12 +9,12 @@ public class CalculatorBuilder1 implements Builder {
     }
 
     @Override
-    public Calculator getCalculator() {
+    public Calculator setCalculator() {
         return this.calculator;
     }
 
     @Override
-    public void getInput(ConsoleReader reader, ConsoleWriter writer, String choice) {
+    public void setInput(ConsoleReader reader, ConsoleWriter writer, String choice, NumberAdapter numberReader) {
         writer.write("Voer getal 1 in:");
         calculator.setValue1(reader.readLine());
 
@@ -23,7 +23,7 @@ public class CalculatorBuilder1 implements Builder {
     }
 
     @Override
-    public void getOperator(ConsoleReader reader, ConsoleWriter writer) {
+    public void setOperator(ConsoleReader reader, ConsoleWriter writer) { // setOperator
         writer.write("Wil je optellen [+] of aftrekken [-]?");
         writer.write("Voer in [+] of [-]?");
         calculator.setOperator(reader.readLine());

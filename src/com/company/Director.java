@@ -10,17 +10,18 @@ public class Director {
         this.builder = builder;
     }
 
-    public Calculator getCalculator() {
-        return this.builder.getCalculator();
+    public Calculator setCalculator() {
+        return this.builder.setCalculator();
     }
 
-    public void constructCalculator(ConsoleReader reader, ConsoleWriter writer, String choice) {
-        this.builder.getInput(reader, writer, choice);
-        this.builder.getOperator(reader, writer);
+    public void constructCalculator(ConsoleReader reader, ConsoleWriter writer, String choice, NumberAdapter numberReader) {
+        this.builder.setInput(reader, writer, choice, numberReader); // set
+        this.builder.setOperator(reader, writer); // set
 
         if (Objects.equals(choice, "2") || Objects.equals(choice, "3")) {
-            getCalculator().spiltStringSum();
+            setCalculator().spiltStringSum();
         }
-        getCalculator().runSum(writer);
+        setCalculator().runSum(writer);
     }
 }
+

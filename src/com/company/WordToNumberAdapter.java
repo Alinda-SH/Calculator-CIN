@@ -2,7 +2,9 @@ package com.company;
 
 import java.util.*;
 
-public class WordToNumberAdapter {
+public class WordToNumberAdapter implements NumberAdapter{ // StringNumberAdapter
+    private ConsoleReader reader;
+
     private boolean isValidInput = true;
     private String result = "";
     private String finalResult = "";
@@ -11,7 +13,11 @@ public class WordToNumberAdapter {
                     "nul", "een", "twee", "drie", "vier", "vijf", "zes", "zeven",
                     "acht", "negen", "tien", "plus", "min");
 
-    public String inputStringtoNumber(String input) {
+    public WordToNumberAdapter(ConsoleReader reader) {
+        this.reader = reader;
+    }
+
+    private String stringtoNumber(String input) {
         if (input != null && input.length() > 0) {
             input = input.replaceAll("-", " ");
             input = input.toLowerCase().replaceAll(" and", " ");
@@ -64,5 +70,14 @@ public class WordToNumberAdapter {
                 result += "-";
             }
         }
+    }
+
+    @Override
+    public String readNumber() {
+        // die moet String zijn als return om dat in calculator we het omzetten naar Int
+        // hierdoor kunnen manier 2 en 3 dezelfde functies gebruiken.
+        String input = this.reader.readLine();
+
+        return stringtoNumber(input);
     }
 }

@@ -31,3 +31,5 @@ de bestanden Strategy, Context, Addition en Substraction.
 Om deze applicatie te maken hebben Renz en Alinda samen gewerkt.
 De adapter is gemaakt door Renz, de builder is gemaakt door Alinda en de strategy is 
 gemaakt door ze allebei.
+
+Renz heeft de Teams opname terug gekeken.

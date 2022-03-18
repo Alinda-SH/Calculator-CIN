@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         ConsoleReader reader = new ConsoleReader();
         ConsoleWriter writer = new ConsoleWriter();
+        NumberAdapter numberReader = new WordToNumberAdapter(reader);
 
         // select calculator version
         writer.write("Hallo, dit is een calculator met twee opties:");
@@ -21,14 +22,14 @@ public class Main {
             Builder calculatorBuilder1 = new CalculatorBuilder1();
             Director director = new Director(calculatorBuilder1);
 
-            director.constructCalculator(reader, writer, choice);
+            director.constructCalculator(reader, writer, choice, numberReader);
 
         } else if (Objects.equals(choice, "2") || Objects.equals(choice, "3")) {
             writer.write("choice : " + choice);
             Builder calculatorBuilder2 = new CalculatorBuilder2();
             Director director = new Director(calculatorBuilder2);
 
-            director.constructCalculator(reader, writer, choice);
+            director.constructCalculator(reader, writer, choice, numberReader);
         }
     }
 }

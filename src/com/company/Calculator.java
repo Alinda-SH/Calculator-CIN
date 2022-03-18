@@ -10,8 +10,6 @@ public class Calculator {
     private String stringSum;
     private String stringSumWords;
 
-    private final WordToNumberAdapter adapter = new WordToNumberAdapter();
-
     public void setValue1(String value1) {
         this.value1 = value1;
     }
@@ -28,15 +26,9 @@ public class Calculator {
         this.stringSum = stringSum;
     }
 
-    public void setStringSumWords(String stringSumWords) {
-        this.stringSumWords = stringSumWords;
-    }
+
 
     public void spiltStringSum() {
-        if (!isNullEmpty(this.stringSumWords)) {
-            this.stringSum = adapter.inputStringtoNumber(this.stringSumWords);
-        }
-
         this.value1 = Character.toString(this.stringSum.charAt(0));
         this.operator = Character.toString(this.stringSum.charAt(1));
         this.value2 = Character.toString(this.stringSum.charAt(2));

@@ -11,12 +11,12 @@ public class CalculatorBuilder2 implements Builder {
     }
 
     @Override
-    public Calculator getCalculator() {
+    public Calculator setCalculator() {
         return this.calculator;
     }
 
     @Override
-    public void getInput(ConsoleReader reader, ConsoleWriter writer, String choice) {
+    public void setInput(ConsoleReader reader, ConsoleWriter writer, String choice, NumberAdapter numberReader) {
         if (Objects.equals(choice, "2")) {
             writer.write("Voer de som met als format {getal}{operator}{getal}");
             writer.write("Voorbeeld 1+4 of 9-8");
@@ -24,13 +24,21 @@ public class CalculatorBuilder2 implements Builder {
         } else if (Objects.equals(choice, "3")) {
             writer.write("Voer de som met als format {getal} {operator} {getal}");
             writer.write("Voorbeeld een plus vijf");
-            calculator.setStringSumWords(reader.readLine());
+
+            calculator.setStringSum(numberReader.readNumber());
+
+            // numberReader.readerNumer.
+            // nieuwe adapter maken, stringnumbers -> intergers
+            // met functie reader.readLine(), vernoemen naar readInt()
+            // service wordt reader. 17.50
+            // StringNumberAdapter.
+
         } else {
-            writer.write("Je hebt geen geldige optie gekozen. Einde oefening");
+            writer.write("Je hebt geen geldige cijfers gekozen. Einde oefening");
         }
     }
 
     @Override
-    public void getOperator(ConsoleReader reader, ConsoleWriter writer) {}
+    public void setOperator(ConsoleReader reader, ConsoleWriter writer) {}
 
 }

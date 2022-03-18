@@ -3,11 +3,10 @@ package com.company;
 import java.util.Objects;
 
 public interface Builder {
-    public Calculator getCalculator();
+    Calculator setCalculator();
 
-    public void getInput(ConsoleReader reader, ConsoleWriter writer, String choice);
+    void setInput(ConsoleReader reader, ConsoleWriter writer, String choice, NumberAdapter numberReader);
 
-    public void getOperator(ConsoleReader reader, ConsoleWriter writer);
-
+    void setOperator(ConsoleReader reader, ConsoleWriter writer);
 
 }
