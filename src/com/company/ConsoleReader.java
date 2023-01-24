@@ -5,6 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ConsoleReader {
+    /**
+     *  Reads the input line from the console
+     *
+     * @return Line
+     */
     public String readLine() {
         try{
             String line = (new BufferedReader(
