@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.Objects;
 
+/**
+ * User validation
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class Director {
 
     private final Builder builder;

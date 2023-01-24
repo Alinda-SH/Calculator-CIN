@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.Objects;
 
+/**
+ * Class for complete calculator
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class Main {
 
     public static void main(String[] args) {
