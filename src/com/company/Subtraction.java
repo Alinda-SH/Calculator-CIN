@@ -1,5 +1,10 @@
 package com.company;
 
+/**
+ * Substraction strategy
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class Subtraction  implements Strategy{
 
     @Override
