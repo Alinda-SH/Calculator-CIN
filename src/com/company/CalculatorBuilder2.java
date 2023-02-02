@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.Objects;
 
+/**
+ * Calculator builder 2
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class CalculatorBuilder2 implements Builder {
 
     private final Calculator calculator;

@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.Objects;
 
+/**
+ * Calculator
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class Calculator {
     private String value1;
     private String value2;

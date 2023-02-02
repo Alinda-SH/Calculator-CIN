@@ -2,6 +2,11 @@ package com.company;
 
 import java.util.*;
 
+/**
+ * Word to number adapter
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class WordToNumberAdapter implements NumberAdapter{ // StringNumberAdapter
     private ConsoleReader reader;
 
