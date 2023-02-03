@@ -1,4 +1,4 @@
-package com.company;
+package main.company;
 
 /**
  * Calculator builder 1

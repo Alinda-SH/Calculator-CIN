@@ -1,15 +1,15 @@
-package com.company;
+package main.company;
 
 /**
- * User validation
+ * Substraction strategy
  *
  * @author A. Klap (klap0015@hz.nl)
  */
-public class Addition implements Strategy{
+public class Subtraction  implements Strategy{
 
     @Override
     public int calculation(int a, int b) {
-        return a+b;
+        return a-b;
     }
 
 }
