@@ -1,4 +1,4 @@
-package main.company;
+package main;
 
 /**
  * Context class for strategy

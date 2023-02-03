@@ -8,6 +8,8 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 public class test {
+  CalculatorBuilder1 calculatorBuilder1;
+  CalculatorBuilder2 calculatorBuilder2;
 
   Calculator calculator;
 

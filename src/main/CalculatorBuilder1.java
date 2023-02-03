@@ -1,4 +1,4 @@
-package main.company;
+package main;
 
 /**
  * Calculator builder 1
