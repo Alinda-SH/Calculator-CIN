@@ -27,11 +27,8 @@ public class Main {
             Builder calculatorBuilder1 = new CalculatorBuilder1();
             Director director = new Director(calculatorBuilder1);
 
-<<<<<<< HEAD
             director.constructCalculator(reader, writer, choice, numberReader);
-=======
-            director.constructCalculator(reader, writer, choice, ffffffff);
->>>>>>> localbranch
+
 
         } else if (Objects.equals(choice, "2") || Objects.equals(choice, "3")) {
             writer.write("choice : " + choice);

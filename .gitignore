@@ -24,3 +24,8 @@
 hs_err_pid*
 .gradle*
 .gradle
+
+# ignore gradle and build folders
+.gradle
+build/
+out
