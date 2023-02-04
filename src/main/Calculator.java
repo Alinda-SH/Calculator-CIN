@@ -39,19 +39,25 @@ public class Calculator {
         this.value2 = Character.toString(this.stringSum.charAt(2));
     }
 
-    public void runSum(ConsoleWriter writer) {
+    public String runSum(ConsoleWriter writer) {
         if (Objects.equals(this.operator, "+")) {
             Context context = new Context(new Addition());
-            System.out.println("Optelsom van " +
-                    value1 + " + " + value2 + " = " +
-                    context.executeStrategy(Integer.parseInt(this.value1), Integer.parseInt(this.value2)));
+            String output = "Optelsom van " +
+                value1 + " + " + value2 + " = " +
+                context.executeStrategy(Integer.parseInt(this.value1), Integer.parseInt(this.value2));
+            System.out.println(output);
+            return output;
         } else if (Objects.equals(this.operator, "-")) {
             Context context = new Context(new Subtraction());
-            System.out.println("Aftreksom van " +
-                    value1 + " - " + value2 + " = " +
-                    context.executeStrategy(Integer.parseInt(this.value1), Integer.parseInt(this.value2)));
+            String output ="Aftreksom van " +
+                value1 + " - " + value2 + " = " +
+                context.executeStrategy(Integer.parseInt(this.value1), Integer.parseInt(this.value2));
+            System.out.println(output);
+            return output;
         } else {
-            writer.write("Je hebt geen geldige optie gekozen. Einde oefening");
+            String output = "Je hebt geen geldige optie gekozen. Einde oefening";
+            writer.write(output);
+            return output;
         }
     }
 
