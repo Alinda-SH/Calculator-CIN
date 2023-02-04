@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-public class test {
+public class CalculatorTest {
   CalculatorBuilder1 calculatorBuilder1;
   CalculatorBuilder2 calculatorBuilder2;
 
