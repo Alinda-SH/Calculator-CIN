@@ -27,7 +27,7 @@ public class Main {
             Builder calculatorBuilder1 = new CalculatorBuilder1();
             Director director = new Director(calculatorBuilder1);
 
-            director.constructCalculator(reader, writer, choice, ffff);
+            director.constructCalculator(reader, writer, choice, ffffffff);
 
         } else if (Objects.equals(choice, "2") || Objects.equals(choice, "3")) {
             writer.write("choice : " + choice);
