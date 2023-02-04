@@ -1,5 +1,10 @@
 package com.company;
 
+/**
+ * Calculator builder 1
+ *
+ * @author A. Klap (klap0015@hz.nl)
+ */
 public class CalculatorBuilder1 implements Builder {
 
     private final Calculator calculator;
